@@ -18,7 +18,8 @@
 \usepackage{multicol}
 \graphicspath{ {./Images/} }
 \usepackage{tikz}
-\usetikzlibrary{decorations.pathreplacing,calligraphy,decorations.pathmorphing}
+\usepackage{calculator}
+\usetikzlibrary{decorations.pathreplacing,calligraphy,decorations.pathmorphing,calc}
 \raggedright
 
 \title{\textbf{Duckie}\linebreak \textit{And The Search For The Golden Goose}}
@@ -88,12 +89,12 @@
     \coordinate (C) at (0,9);
    
    \node [inner sep=0pt] at (C) {\includegraphics[height=0.8cm]{DuckieGami}};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (A) -- (B) node[midway, left] {3 km};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (B) -- (C) node[midway, left] {6 km};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {3 km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (C) node[midway, left] {6 km};
     
     \draw [decorate, 
-	decoration = {brace,mirror,
-		raise=10pt,}] (A) -- (C) node[midway, right, xshift=0.5cm] {9 km};
+	decoration = {calligraphic brace,mirror,
+		raise=10pt,amplitude=5pt}] (A) -- (C) node[midway, right, xshift=0.5cm,line width=3pt] {9 km};
 \end{tikzpicture}}
 %Multiplication
 \subchapter{Multiplication}
@@ -107,13 +108,13 @@
     \coordinate (D) at (0,9);
     
     \node [inner sep=0pt] at (D) {\includegraphics[height=0.8cm]{DuckieGami}};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (A) -- (B) node[midway, left] {9 km};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (B) -- (C) node[midway, left] {9 km};
-    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (C) -- (D) node[midway, left] {9 km};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {9 km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (C) node[midway, left] {9 km};
+    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (C) -- (D) node[midway, left] {9 km};
     
     \draw [decorate, 
-	decoration = {brace,mirror,
-		raise=10pt,}] (A) -- (D) node[midway, right, xshift=0.5cm] {27 km};
+	decoration = {calligraphic brace,mirror,
+		raise=10pt,amplitude=5pt}] (A) -- (D) node[midway, right, xshift=0.5cm,line width=3pt] {27 km};
 \end{tikzpicture}}
 %Negatives
 \subchapter{Negative Numbers}
@@ -129,9 +130,9 @@
     \coordinate (F) at (2,8);
     
     \node [inner sep=0pt] at (F) {\includegraphics[height=0.8cm]{DuckieGami}};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (A) -- (B) node[midway, right] {27 km};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (C) -- (D) node[midway, right] {-3 km};
-    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (E) -- (F) node[midway, right] {24 km};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, right] {27 km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (C) -- (D) node[midway, right] {-3 km};
+    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (E) -- (F) node[midway, right] {24 km};
 \end{tikzpicture}}
 %Multiples of a negative
 \subchapter{Multiples of a negative}
@@ -149,11 +150,11 @@
     \coordinate (H) at (2,8);
     
     \node [inner sep=0pt] at (H) {\includegraphics[height=0.8cm]{DuckieGami}};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (A) -- (B) node[midway, right] {27 km};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (C) -- (D) node[midway, right] {-1};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (D) -- (E) node[midway, right] {-1};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (E) -- (F) node[midway, right] {-1};
-     \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (G) -- (H) node[midway, right] {24 km};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, right] {27 km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (C) -- (D) node[midway, right] {-1};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (D) -- (E) node[midway, right] {-1};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (E) -- (F) node[midway, right] {-1};
+     \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (G) -- (H) node[midway, right] {24 km};
 \end{tikzpicture}}
 %Negative of a Negative
 \subchapter{Negative of a Negative}
@@ -169,9 +170,9 @@
     \coordinate (F) at (2,6);
     
     \node [inner sep=0pt] at (F) {\includegraphics[height=0.8cm]{DuckieGami}};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (A) -- (B) node[midway, right] {6 km};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (C) -- (D) node[midway, right] {-6 km};
-    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (E) -- (F) node[midway, right] {- -6 km};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, right] {6 km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (C) -- (D) node[midway, right] {-6 km};
+    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (E) -- (F) node[midway, right] {- -6 km};
 \end{tikzpicture}}
 %Multiplication Table
 \subsection{Multiplication Table}
@@ -229,18 +230,18 @@ that 4×2 is the same as 2×4. This property also has a special name:
     \coordinate (Dp) at (1.5,8);
     
     \node [inner sep=0pt] at (D) {\includegraphics[height=0.8cm]{Gus}};
-    \draw[-|,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (A) -- (B) node[midway, left] {4 km};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (B) -- (C) node[midway, left] {3 km};
-    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (C) -- (D) node[midway, left] {1 km};
+    \draw[-|,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {4 km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (C) node[midway, left] {3 km};
+    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (C) -- (D) node[midway, left] {1 km};
     
     \node [inner sep=0pt] at (Dp) {\includegraphics[height=0.8cm]{DuckieGami}};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Ap) -- (Bp) node[midway, left] {4 km};
-    \draw[-|,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Bp) -- (Cp) node[midway, left] {3 km};
-    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Cp) -- (Dp) node[midway, left] {1 km};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Ap) -- (Bp) node[midway, left] {4 km};
+    \draw[-|,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Bp) -- (Cp) node[midway, left] {3 km};
+    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Cp) -- (Dp) node[midway, left] {1 km};
     
     \draw [decorate, 
 	decoration = {brace,mirror,
-		raise=15pt,}] (Ap) -- (Dp) node[midway, right, xshift=0.5cm] {27 km};
+		raise=15pt,}] (Ap) -- (Dp) node[midway, right, xshift=0.2cm] {27 km};
 \end{tikzpicture}}
 %Additive Commutativity
 \subchapter{Additive Commutativity}
@@ -256,20 +257,20 @@ that 4×2 is the same as 2×4. This property also has a special name:
     \coordinate (Cp) at (1.5,9);
     
     \node [inner sep=0pt] at (C) {\includegraphics[height=0.8cm]{Gus}};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (A) -- (B) node[midway, left] {140 m};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (B) -- (C) node[midway, left] {160 m};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {140 m};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (C) node[midway, left] {160 m};
     
     \node [inner sep=0pt] at (Cp) {\includegraphics[height=0.8cm]{DuckieGami}};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Ap) -- (Bp) node[midway, left] {160 m};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Bp) -- (Cp) node[midway, left] {140 m};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Ap) -- (Bp) node[midway, left] {160 m};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Bp) -- (Cp) node[midway, left] {140 m};
     
     \draw [decorate, 
-	decoration = {brace,mirror,
-		raise=15pt,}] (Ap) -- (Cp) node[midway, right, xshift=0.6cm] {300 m};
+	decoration = {calligraphic brace,mirror,
+		raise=10pt,amplitude=5pt}] (Ap) -- (Cp) node[midway, right, xshift=0.5cm,line width=3pt] {300 m};
 \end{tikzpicture}}
 %Distributativity
 \subchapter{Distributivity}
-{Duckie and Güs were starting to get frustrated. No matter what happened, the seemed to tie every time! Duckie had thought that if he competed long enough, Güs would get tired and he would be able to win, so challenged him to another flying contest. In the third contest, Güs traveled \textbf{5} km, then \textbf{3} km, and repeated that pattern \textbf{2} times. Duckie instead traveled \textbf{5} km \textbf{2} times, then \textbf{3} km \textbf{2} times. Did they tie?}
+{Duckie and Güs were starting to get frustrated. No matter what happened, the seemed to tie every time! Duckie had thought that if he competed long enough, Güs would get tired and he would be able to win, so challenged him to another flying contest. In the third contest, Güs traveled \textbf{2} km, then \textbf{4} km, and repeated that pattern \textbf{2} times. Duckie instead traveled \textbf{2} km \textbf{2} times, then \textbf{4} km \textbf{2} times. Did they tie?}
 {Yes! Duckie and Güs flew the same amount}
 {Multiplying by a full expression is the same as multiplying by each part of the expression. In other words: A*(B+C) = (A*B) + (A*C)}
 {\begin{tikzpicture}
@@ -281,23 +282,42 @@ that 4×2 is the same as 2×4. This property also has a special name:
     \coordinate (Cp) at (1.5,9);
     
     \node [inner sep=0pt] at (C) {\includegraphics[height=0.8cm]{Gus}};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (A) -- (B) node[midway, left] {140 m};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (B) -- (C) node[midway, left] {160 m};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {140 m};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (C) node[midway, left] {160 m};
     
     \node [inner sep=0pt] at (Cp) {\includegraphics[height=0.8cm]{DuckieGami}};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Ap) -- (Bp) node[midway, left] {160 m};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Bp) -- (Cp) node[midway, left] {140 m};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Ap) -- (Bp) node[midway, left] {160 m};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Bp) -- (Cp) node[midway, left] {140 m};
     
-    \draw [decorate, 
-	decoration = {brace,mirror,
-		raise=15pt,}] (Ap) -- (Cp) node[midway, right, xshift=0.6cm] {300 m};
+     \draw [decorate, 
+	decoration = {calligraphic brace,mirror,
+		raise=10pt,amplitude=5pt}] (Ap) -- (Cp) node[midway, right, xshift=0.5cm,line width=3pt] {300 m};
 \end{tikzpicture}}
 %Commutativity
 \subchapter{Multiplicative Commutativity}
 {At this point, Güs realized that Duckie was a very capable goose. When he first challenged Duckie, he expected winning to be a cakewalk, but his opponent ended up posing quite a challenge. Being an honorable goose, this made him respect Duckie more. He decided that the next contest should be a weightlifting competition, where whoever lifted the most amount of total weight would win. Duckie lifted \textbf{10} kg \textbf{3} times, whereas Güs lifted only \textbf{3} kg but does it \textbf{10} times. Did they tie?}
 {Yes! Duckie and Güs lifted the same amount}
 {The order of multiplication does not affect the result. In other words: A * B = B * A}
-{MultiplicativeCommutativity}
+{\begin{tikzpicture} 
+    \node [inner sep=0pt] at (0,15) {\includegraphics[height=0.8cm]{Gus}};
+    \foreach \pos in {1,...,10} {	
+        \MODULO{\pos}{2}{\rval}
+        \SUBTRACT{\pos}{1}{\bl}
+        \MODULO{\bl}{2}{\bval}
+        \definecolor{col}{rgb}{\rval,0,\bval}
+        \draw[->,ultra thick,col, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (0,\pos *1.5 - 1.5) -- (0,\pos *1.5) node[midway, left] {3 kg};
+    }
+     \node [inner sep=0pt] at (1.5,15) {\includegraphics[height=0.8cm]{DuckieGami}};
+    \foreach \pos in {1,...,3} {	
+        \MODULO{\pos}{2}{\rval}
+        \SUBTRACT{\pos}{1}{\bl}
+        \MODULO{\bl}{2}{\bval}
+        \definecolor{col}{rgb}{\bval,\rval,\bval}
+        \draw[->,ultra thick,col, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (1.5,\pos *5 - 5) -- (1.5,\pos *5) node[midway, left] {10 kg};
+    }
+    
+    \draw [decorate, decoration = {calligraphic brace,mirror, raise=10pt,amplitude=5pt}] (1.5,0) -- (1.5,15) node[midway, right, xshift=0.5cm,line width=3pt] {30 kg};
+\end{tikzpicture}}
 %End Of Chapter 2
 \paragraph{} After the competition, Duckie and Güs sat down, exhausted. They had both realized that, no matter what competition they had, they were equally matched. Neither one would be able to beat the other, and they had won each other's respect. 
 \paragraph{} "Why don't you join me?" asked Duckie.
@@ -317,17 +337,43 @@ that 4×2 is the same as 2×4. This property also has a special name:
 {Because Duckie and Güs were travelling together, they were always at the same position at any time.}
 {Güs's position = Duckie's position. Duckie's position was P4, so Güs's position was also P4}
 {When two things are the same, we write this in mathematics as "="}
-{Equality}
+{\begin{tikzpicture}
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (0,6.4);
+    \coordinate (Ap) at (2,0);
+    \coordinate (Bp) at (2,6.4);
+    
+    \node [inner sep=0pt] at (B) {\includegraphics[height=0.8cm]{Gus}};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {38 km};
+    \node [inner sep=0pt] at (Bp) {\includegraphics[height=0.8cm]{DuckieGami}};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Ap) -- (Bp) node[midway, left] {38 km};
+\end{tikzpicture}}
 %The Equality Rule
 \subchapter{The Equality Rule}
 {The goose authorities, having trained Güs in the police academy, knew he was a very fast flyer. In fact, he had won the village racing competition for the past three years! Because Duckie and Güs were travelling together, they realized that every time Güs had flown ahead of Duckie, Duckie had to increase his position by the same amount to keep up.}
 {Duckie's position + $\Delta$x = Güs's position + $\Delta$x}
 {What happens to one side of an equation must happen to the other side so that they are still equal.}
-{EqualityRule}
+{\begin{tikzpicture}
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (0,6.4);
+    \coordinate (C) at (0,9.4);
+    \coordinate (Ap) at (2,0);
+    \coordinate (Bp) at (2,6.4);
+    \coordinate (Cp) at (2,9.4);
+    
+    \node [inner sep=0pt] at (C) {\includegraphics[height=0.8cm]{Gus}};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {38 km};
+    \draw[->,ultra thick,orange, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (C) node[midway, left] {24 km};
+    \node [inner sep=0pt] at (Cp) {\includegraphics[height=0.8cm]{DuckieGami}};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Ap) -- (Bp) node[midway, left] {38 km};
+    \draw[->,ultra thick,orange, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Bp) -- (Cp) node[midway, left] {24 km};
+    
+    \draw [decorate, decoration = {calligraphic brace,mirror, raise=10pt,amplitude=5pt}] (Ap) -- (Cp) node[midway, right, xshift=0.5cm,line width=3pt] {62 km};
+\end{tikzpicture}}
 %Commutativity
 \subchapter{Variables}
-{The goose authorities were still a bit confused about Duckie and Güs's progress. They knew that there were 4 competitions, and that they started at P4. They also knew that they ended at P5. How much did they travel on average in each competition?}
-{\begin{center} 4x + 30 = 54 \linebreak 4x + 30 - 30 = 54 - 30 \linebreak $\frac{4x}{4}$ = $\frac{24}{4}$ \linebreak x = $8$  \end{center}}
+{The goose authorities were still a bit confused about Duckie and Güs's progress. They knew that there were 4 competitions, and that they started at 38 km. They also knew that they ended at 62 km. How much did they travel on average in each competition?}
+{\begin{center} 4x + 38 = 62 \linebreak 4x + 38 = 62 - 38 \linebreak $\frac{4x}{4}$ = $\frac{24}{4}$ \linebreak x = $8$  \end{center}}
 {Letters and Symbols can be used to represent a number which isn’t already known, such as X. 2x + 3 = 6 means that 2*(some number) + 3 = 6.}
 {Variables}
 \chapter{Ratios and Fractions}
