@@ -218,19 +218,80 @@ that 4×2 is the same as 2×4. This property also has a special name:
 {Güs and Duckie both thought they were good flyers, so they decided to compete in a three-part flying distance competition. The first leg of the race was \textbf{4} km, the second leg was \textbf{3} km, and the third leg was \textbf{1} km. The distance flying competition rules stated that any goose would be allowed to take one break in between laps. They both want to win, so create strategies to try to win. Güs decided to travel the first leg (\textbf{4} km) of the race, takes his break then travel the second and third legs (\textbf{3} km and \textbf{1} km). Duckie instead traveled the first leg, (\textbf{4} km) of the race and the second leg (\textbf{3} km) of the race, then took his break, and traveled the third leg (\textbf{1} km). Did they tie?}
 {Yes! Duckie and Güs traveled the same amount}
 {When adding, computation can be grouped in any way. In other words: (A+B)+C = A+(B+C)}
-{Associativity}
+{\begin{tikzpicture}
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (0,4);
+    \coordinate (C) at (0,7);
+    \coordinate (D) at (0,8);
+    \coordinate (Ap) at (1.5,0);
+    \coordinate (Bp) at (1.5,4);
+    \coordinate (Cp) at (1.5,7);
+    \coordinate (Dp) at (1.5,8);
+    
+    \node [inner sep=0pt] at (D) {\includegraphics[height=0.8cm]{Gus}};
+    \draw[-|,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (A) -- (B) node[midway, left] {4 km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (B) -- (C) node[midway, left] {3 km};
+    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (C) -- (D) node[midway, left] {1 km};
+    
+    \node [inner sep=0pt] at (Dp) {\includegraphics[height=0.8cm]{DuckieGami}};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Ap) -- (Bp) node[midway, left] {4 km};
+    \draw[-|,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Bp) -- (Cp) node[midway, left] {3 km};
+    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Cp) -- (Dp) node[midway, left] {1 km};
+    
+    \draw [decorate, 
+	decoration = {brace,mirror,
+		raise=15pt,}] (Ap) -- (Dp) node[midway, right, xshift=0.5cm] {27 km};
+\end{tikzpicture}}
 %Additive Commutativity
 \subchapter{Additive Commutativity}
 {Duckie and Güs decided that to break the tie, they needed do another competition. \linebreak Because geese are water animals, swimming is a very important skill, so they decided that that should be their next competition. They each have a different strategy. Güs swam \textbf{140} m, dried off, then swam \textbf{160} m. Duckie instead swam \textbf{160} m, dried off, then swam \textbf{140} m. Did they tie?}
 {Yes! Duckie and Güs swam the same amount}
 {The order of adding does not matter. In other words: A+B = B+A}
-{AdditiveCommutativity}
+{\begin{tikzpicture}
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (0,4);
+    \coordinate (C) at (0,9);
+    \coordinate (Ap) at (1.5,0);
+    \coordinate (Bp) at (1.5,5);
+    \coordinate (Cp) at (1.5,9);
+    
+    \node [inner sep=0pt] at (C) {\includegraphics[height=0.8cm]{Gus}};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (A) -- (B) node[midway, left] {140 m};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (B) -- (C) node[midway, left] {160 m};
+    
+    \node [inner sep=0pt] at (Cp) {\includegraphics[height=0.8cm]{DuckieGami}};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Ap) -- (Bp) node[midway, left] {160 m};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Bp) -- (Cp) node[midway, left] {140 m};
+    
+    \draw [decorate, 
+	decoration = {brace,mirror,
+		raise=15pt,}] (Ap) -- (Cp) node[midway, right, xshift=0.6cm] {300 m};
+\end{tikzpicture}}
 %Distributativity
 \subchapter{Distributivity}
 {Duckie and Güs were starting to get frustrated. No matter what happened, the seemed to tie every time! Duckie had thought that if he competed long enough, Güs would get tired and he would be able to win, so challenged him to another flying contest. In the third contest, Güs traveled \textbf{5} km, then \textbf{3} km, and repeated that pattern \textbf{2} times. Duckie instead traveled \textbf{5} km \textbf{2} times, then \textbf{3} km \textbf{2} times. Did they tie?}
 {Yes! Duckie and Güs flew the same amount}
 {Multiplying by a full expression is the same as multiplying by each part of the expression. In other words: A*(B+C) = (A*B) + (A*C)}
-{Distributivity}
+{\begin{tikzpicture}
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (0,4);
+    \coordinate (C) at (0,9);
+    \coordinate (Ap) at (1.5,0);
+    \coordinate (Bp) at (1.5,5);
+    \coordinate (Cp) at (1.5,9);
+    
+    \node [inner sep=0pt] at (C) {\includegraphics[height=0.8cm]{Gus}};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (A) -- (B) node[midway, left] {140 m};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (B) -- (C) node[midway, left] {160 m};
+    
+    \node [inner sep=0pt] at (Cp) {\includegraphics[height=0.8cm]{DuckieGami}};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Ap) -- (Bp) node[midway, left] {160 m};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.5pt}] (Bp) -- (Cp) node[midway, left] {140 m};
+    
+    \draw [decorate, 
+	decoration = {brace,mirror,
+		raise=15pt,}] (Ap) -- (Cp) node[midway, right, xshift=0.6cm] {300 m};
+\end{tikzpicture}}
 %Commutativity
 \subchapter{Multiplicative Commutativity}
 {At this point, Güs realized that Duckie was a very capable goose. When he first challenged Duckie, he expected winning to be a cakewalk, but his opponent ended up posing quite a challenge. Being an honorable goose, this made him respect Duckie more. He decided that the next contest should be a weightlifting competition, where whoever lifted the most amount of total weight would win. Duckie lifted \textbf{10} kg \textbf{3} times, whereas Güs lifted only \textbf{3} kg but does it \textbf{10} times. Did they tie?}
