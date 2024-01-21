@@ -375,7 +375,38 @@ that 4×2 is the same as 2×4. This property also has a special name:
 {The goose authorities were still a bit confused about Duckie and Güs's progress. They knew that there were 4 competitions, and that they started at 38 km. They also knew that they ended at 62 km. How much did they travel on average in each competition?}
 {\begin{center} 4x + 38 = 62 \linebreak 4x + 38 = 62 - 38 \linebreak $\frac{4x}{4}$ = $\frac{24}{4}$ \linebreak x = $8$  \end{center}}
 {Letters and Symbols can be used to represent a number which isn’t already known, such as X. 2x + 3 = 6 means that 2*(some number) + 3 = 6.}
-{Variables}
+{\begin{tikzpicture}
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (0,1);
+    \coordinate (C) at (0,2);
+    \coordinate (D) at (0,3);
+    \coordinate (E) at (0,4);
+    \coordinate (F) at (0,10);
+    \coordinate (Ap) at (1.5,0);
+    \coordinate (Bp) at (1.5,1);
+    \coordinate (Cp) at (1.5,2);
+    \coordinate (Dp) at (1.5,3);
+    \coordinate (Ep) at (1.5,4);
+    \coordinate (Fp) at (1.5,10);
+    \coordinate (Af) at (3.4,0);
+    \coordinate (Bf) at (3.4,1);
+    \node [inner sep=0pt] at (F) {\includegraphics[height=0.8cm]{DuckieGami}};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {? km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (C) node[midway, left] {? km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (C) -- (D) node[midway, left] {? km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (D) -- (E) node[midway, left] {? km};
+    \draw[->,ultra thick,green, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (E) -- (F) node[midway, left] {38 km};
+    \draw [decorate, decoration = {calligraphic brace, raise=35pt,amplitude=5pt}] (A) -- (F) node[midway, left, xshift=-1.5cm,line width=3pt] {62 km};
+    
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Ap) -- (Bp) node[midway, left] {? km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Bp) -- (Cp) node[midway, left] {? km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Cp) -- (Dp) node[midway, left] {? km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Dp) -- (Ep) node[midway, left] {? km};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Fp) -- (Ep) node[midway, left] {-38 km};
+    \draw [decorate, decoration = {calligraphic brace,mirror, raise=10pt,amplitude=5pt}] (Ap) -- (Ep) node[midway, right, xshift=0.5cm,line width=3pt] {24 km};
+    
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Af) -- (Bf) node[midway, left] {8 km};
+\end{tikzpicture}}
 \chapter{Ratios and Fractions}
 \paragraph{} It took alot of work, but the authorities finally figured out where Duckie was. They noticed that Duckie and Güs made quite a bit of progress, which was very bad news for them. They wanted to use this information to try to stop them. Because of Güs defecting to join Duckie's journey, they realized that sending other policegeese would make it hard to keep their power in the village. 
 \paragraph{} Through their past migrations, they knew lots of bounty hunters along the way, and they believed that they could have them set traps. These bounty hunters were famously clever, and each of them decided to use specific strategies to help them catch Duckie and Güs.
@@ -383,7 +414,7 @@ that 4×2 is the same as 2×4. This property also has a special name:
 \pagebreak
 %Ratios
 \subchapter{Ratios}
-{The first bounty hunter decided to look at the entire journey, and set up traps every P4 km. He estimated that the entire journey was R km long. Duckie having guessed this fairly obvious scheme,  thought that if he knew how many traps there would be, he could avoid them. For every km in the entire journey, there would be a trap every P4 km. How many traps will there be on the journey?}{For every P4 km Duckie has to travel out of (R) km overall, there will be a trap. That means that there is a trap every $\frac{R}{P4}$ km of the journey. For every one km in P4, there are S km in the journey (R), which means that there are S lengths of size P4 within R. There are $\frac{S}{1}$, or S traps}{A ratio is a certain amount for each of another amount, and is written as $\frac{A}{B}$. Break up A into B equal parts}{Blank}
+{The first bounty hunter decided to look at the entire journey, and set up traps every P4 km. He estimated that the entire journey was R km long. Duckie having guessed this fairly obvious scheme,  thought that if he knew how many traps there would be, he could avoid them. For every km in the entire journey, there would be a trap every P4 km. How many traps will there be on the journey?}{For every P4 km Duckie has to travel out of (R) km overall, there will be a trap. That means that there is a trap every $\frac{R}{P4}$ km of the journey. For every one km in P4, there are S km in the journey (R), which means that there are S lengths of size P4 within R. There are $\frac{S}{1}$, or S traps}{A ratio is a certain amount for each of another amount, and is written as $\frac{A}{B}$. Break up A into B equal parts}{}
 %Multiplying with Fractions
 \subchapter{Multiplying with Fractions}
 {Using this knowledge, Duckie figured out how to avoid the first bounty hunter's traps. The second bounty hunter decided to prepare better than the first hunter. He realized that km are a very large unit for geese, so decided to start measuring the distance Duckie and Güs flew in a unit he created called "goosemeters" (gm). This meant that he needed to change their position from kilometers into goosemeters. There are U gm for every V m. To help beat the second bounty hunter, Duckie and Güs decide to also measure using gms. How many gms are in P4 km?}{
