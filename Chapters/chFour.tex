@@ -5,10 +5,24 @@
 \pagebreak
 %Ratios
 \subchapter{Ratios}
-{The first bounty hunter decided to look at the entire journey, and set up traps every P4 km. He estimated that the entire journey was R km long. Duckie having guessed this fairly obvious scheme,  thought that if he knew how many traps there would be, he could avoid them. For every km in the entire journey, there would be a trap every P4 km. How many traps will there be on the journey?}
-{For every P4 km Duckie has to travel out of (R) km overall, there will be a trap. That means that there is a trap every $\frac{R}{P4}$ km of the journey. For every one km in P4, there are S km in the journey (R), which means that there are S lengths of size P4 within R. There are $\frac{S}{1}$, or S traps.}
+{The first bounty hunter decided to look at the entire journey, and set up traps every \textbf{62} km. He estimated that the entire journey was \textbf{186} km long. Duckie having guessed this fairly obvious scheme,  thought that if he knew how many traps there would be, he could avoid them. For every km in the entire journey, there would be a trap every \textbf{62} km. How many traps will there be on the journey?}
+{For every \textbf{62} km Duckie has to travel out of \textbf{186} km overall, there will be a trap. That means that there is a trap every $\frac{186}{62}$ km of the journey. For every one km in \textbf{62} km, there are \textbf{3} km in the journey, which means that there are \textbf{3} lengths of size \textbf{62} km within \textbf{186} km. There are $\frac{3}{1}$, or \textbf{3} traps.}
 {A ratio is a certain amount for each of another amount, and is written as $\frac{A}{B}$. Break up A into B equal parts.}
-{}
+{\begin{tikzpicture}
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (0,3);
+    \coordinate (C) at (0,6);
+    \coordinate (D) at (0,9);
+    
+    \node [inner sep=0pt] at (D) {\includegraphics[height=0.8cm]{DuckieGami}};
+    \draw[-|,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {62 km};
+    \draw[-|,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (C) node[midway, left] {62 km};
+    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (C) -- (D) node[midway, left] {62 km};
+    
+    \draw [decorate, 
+	decoration = {calligraphic brace,mirror,
+		raise=10pt,amplitude=5pt}] (A) -- (D) node[midway, right, xshift=0.5cm,line width=3pt] {$3\texttimes 62=182 km$};
+\end{tikzpicture}}
 %Multiplying with Fractions
 \subchapter{Multiplying with Fractions}
 {Using this knowledge, Duckie figured out how to avoid the first bounty hunter's traps. The second bounty hunter decided to prepare better than the first hunter. He realized that km are a very large unit for geese, so decided to start measuring the distance Duckie and Güs flew in a unit he created called "goosemeters" (gm). This meant that he needed to change their position from kilometers into goosemeters. There are U gm for every V m. To help beat the second bounty hunter, Duckie and Güs decide to also measure using gms. How many gms are in P4 km?}{

@@ -1,0 +1,17 @@
+ \begin{tikzpicture}
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (0,9);
+    \coordinate (C) at (1,9);
+    \coordinate (D) at (1,8.666);
+    \coordinate (E) at (1,8.333);
+    \coordinate (F) at (1,8);
+    \coordinate (G) at (2,0);
+    \coordinate (H) at (2,8);
+
+    \node [inner sep=0pt] at (H) {\includegraphics[height=0.8cm]{DuckieGami}};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, right] {27 km};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (C) -- (D) node[midway, right] {-1};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (D) -- (E) node[midway, right] {-1};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (E) -- (F) node[midway, right] {-1};
+     \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (G) -- (H) node[midway, right] {24 km};
+\end{tikzpicture}
