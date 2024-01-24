@@ -19,14 +19,18 @@
  {When Duckie has flown a full circle around Bessie and Bessie was looking in the same direction where she started, she had turned around 2$\pi$ radians. This amount Bessie turned cannot be written as a fraction, and so is called “irrational”. This specific irrational number has the name “pi”. 
  \paragraph{} For convenience, approximate $\pi$ to be $\frac{22}{7}$ (the actual value of pi is slightly smaller).}
  {\begin{tikzpicture}
-    \draw[purple, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick,fill=purple!40!white] (0,0) circle (3) node [right,xshift=3cm] {$2\pi r$};
+    \draw[purple, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick,fill=purple!40!white] (0,0) circle (3) node [above] {$2\pi$};
     \draw[blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick] (0,0) -- (3,0) node [midway, above] {$r$};
+    \draw[->,purple, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick] (3,0)--(3,0);
 \end{tikzpicture}}
   \subchapter{Perimeter of a Circle}
  {After some effort calculating, Duckie drew one full circle around Bessie. But, because of his injured wing, he began to feel a bit tired. He decided that in the full day, he would only fly W m so that his wing would recover properly. How much has Duckie flown?}
  {For every radian Bessie turned, Duckie flew R m. Because Bessie turned 2$\pi$ radians, Duckie must have turned $2\pi Q$ m.}
  {The perimeter of a circle is always $2\pi r$, where r is radius of the circle.}
- {Addition}
+ {\begin{tikzpicture}
+    \draw[purple, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick,fill=purple!40!white] (0,0) circle (3) node [right,xshift=3cm] {$2\pi Q$};
+    \draw[blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick] (0,0) -- (3,0) node [midway, above] {$Q$};
+\end{tikzpicture}}
  \subchapter{Trigonometric Functions}
  {After resting for a few minutes, Duckie and Bessie started drawing their next circle. They decided that, to help give Farmer John some contrast, they would make it have a radius of 1. While creating the circle, tragedy struck! Duckie lost track of where he was! He sees that Bessie turned $\frac{\pi}{4}$ radians. What is Duckie's vertical position? What is Duckie's horizontal position?}
  {When Bessie rotated $\frac{\pi}{2}$ radians, Duckie's vertical position and horizontal positions are $\frac{\pi}{2}$.}
