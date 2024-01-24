@@ -8,13 +8,20 @@
  {Bessie and Duckie came up with a plan to draw their circles. They decided that Duckie would fly around Bessie, staying exactly Q m away from Bessie at each point. To make sure Duckie is exactly the same distance, Bessie would spin around and look at him at any given point. Bessie knows she will get dizzy if she spins too much, so decides to keep track of how much she has turned at any moment.}
  {}
  {The number of meters between the Duckie and Bessie is called r, or the “radius”. When Duckie has flown r meters around Bessie, the amount Bessie has turned is a “radian”.}
- {Addition}
+ {\begin{tikzpicture}
+    \draw[blue] (3,0) -- ++(0+180:3) -- +(57:3);
+    \draw[red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick] (3,0) arc[start angle=0, end angle=57, radius=3] node [midway,above,xshift=0.5cm] {$r$};
+    \draw[blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick] (0,0) -- (3,0) node [midway,above] {$r$};
+\end{tikzpicture}}
  \subchapter{Drawing a single Circle}
  {Bessie and Duckie began to draw the first circle, but ran into an issue. She didn't know when to stop spinning! How many radians does Bessie have to turn so that Duckie makes a full circle (and she looks in the same place she started)?}
  {}
  {When Duckie has flown a full circle around Bessie and Bessie was looking in the same direction where she started, she had turned around 2$\pi$ radians. This amount Bessie turned cannot be written as a fraction, and so is called “irrational”. This specific irrational number has the name “pi”. 
  \paragraph{} For convenience, approximate $\pi$ to be $\frac{22}{7}$ (the actual value of pi is slightly smaller).}
- {Addition}
+ {\begin{tikzpicture}
+    \draw[purple, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick,fill=purple!40!white] (0,0) circle (3) node [right,xshift=3cm] {$2\pi r$};
+    \draw[blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick] (0,0) -- (3,0) node [midway, above] {$r$};
+\end{tikzpicture}}
   \subchapter{Perimeter of a Circle}
  {After some effort calculating, Duckie drew one full circle around Bessie. But, because of his injured wing, he began to feel a bit tired. He decided that in the full day, he would only fly W m so that his wing would recover properly. How much has Duckie flown?}
  {For every radian Bessie turned, Duckie flew R m. Because Bessie turned 2$\pi$ radians, Duckie must have turned $2\pi Q$ m.}
