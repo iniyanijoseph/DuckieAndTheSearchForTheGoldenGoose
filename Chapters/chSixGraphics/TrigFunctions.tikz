@@ -1,0 +1,23 @@
+\begin{tikzpicture}[scale=3]
+    %\draw[step=.5cm,gray,very thin] (-1.4,-1.4) grid (1.4,1.4);
+    \filldraw[fill=blue!20,draw=red] (0,0) -- (3mm,0mm)
+    arc [start angle=0, end angle=45, radius=3mm] -- cycle;
+    \node[red] at (15:2mm) {$\alpha$};
+    \draw[->] (-1.5,0) -- (1.5,0) coordinate (x axis)node[right]{$Horizontal$};
+    \draw[->] (0,-1.5) -- (0,1.5) coordinate (y axis)node[above]{$Vertical$};
+    \draw (0,0) circle [radius=1cm];
+    \draw[ultra thick,orange, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}]
+    (45:1cm) -- node[left=1pt,fill=white] {$\sin \alpha$} (45:1cm |- x axis);
+    \draw[ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}]
+    (45:1cm |- x axis) -- node[below=2pt,fill=white] {$\cos \alpha$} (0,0);
+    \path [name path=upward line, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (1,0) -- (1,1);
+    \path [name path=sloped line] (0,0) -- (45:1.5cm);
+    \draw [name intersections={of=upward line and sloped line, by=t}, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}]
+    [ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (1,0) -- node [right=1pt,fill=white]
+    {$\displaystyle \tan \alpha$} (t);
+    \draw (0,0) -- (t);
+    \foreach \x/\xtext in {-1, -0.5/-\frac{1}{2}, 1}
+    \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north,fill=white] {$\xtext$};
+    \foreach \y/\ytext in {-1, -0.5/-\frac{1}{2}, 0.5/\frac{1}{2}, 1}
+    \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east,fill=white] {$\ytext$};
+\end{tikzpicture}

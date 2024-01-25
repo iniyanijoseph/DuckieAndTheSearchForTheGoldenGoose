@@ -9,72 +9,13 @@
  \paragraph{} Güs, enthusiastically agreed. "That sounds great!"
 %Area of Rectangles
  \subchapter{Area of Rectangles}
-{On the 9th day of the journey, Güs began working on the farm. His first task was to fly around and scatter grass seeds on the farm. As he went into the store room to find the bags of seeds, he realized he needed to know how many bags of seeds he needs to bring with him. Bessie told him that each bag of seeds can cover a square of grass that is 1 m wide and 1 m across. Güs also knows that the farm is 300 m high and 400 m wide. How many bags of seeds does Güs need to carry?}{There are 300 rows of grass, where each row is made of 400 1x1 squares. This means that there are 300*400 = 300*400 meters$^{2}$ of grass, and that Güs needs to carry 300*400 bags.}{Area is how much space an object takes up. When measuring a 2d shape, we find how many 1x1 squares the object fills. When measuring the area of a 3d shape, we find how many 1x1x1 squares the object fills. Multiplying the length of each side together for "square" shapes gives us the area. (We will discuss area further with integrals).
-}{\begin{tikzpicture}
-    \coordinate (A) at (0,0);
-    \coordinate (B) at (0,3);
-    \coordinate (C) at (4,3);
-    \coordinate (D) at (4,0);
-    
-    \foreach \xpos in {1,...,4} {	
-        \foreach \ypos in {1,...,3} {
-            \SUBTRACT{\xpos}{1}{\llxpos}
-            \SUBTRACT{\ypos}{1}{\llypos}
-            \ADD{\llxpos}{\llypos}{\s}
-            \MODULO{\s}{2}{\redval}
-            \ADD{\s}{1}{\b}
-            \MODULO{\b}{2}{\blueval}
-            \definecolor{col}{rgb}{\redval,0,\blueval}
-            \filldraw[fill=col!40!white, draw=col, ultra thick, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (\llxpos,\llypos) rectangle (\xpos,\ypos);
-        }
-    }
-    
-    \draw [decorate, decoration = {calligraphic brace, raise=10pt,amplitude=5pt}] (C) -- (D) node[midway, left, xshift=2cm,line width=3pt] {300 m};
-    \draw [decorate, decoration = {calligraphic brace, raise=10pt,amplitude=5pt}] (B) -- (C) node[midway, left, xshift=0.5cm, yshift=1cm,line width=3pt] {400 m};
-\end{tikzpicture}}
+{On the 9th day of the journey, Güs began working on the farm. His first task was to fly around and scatter grass seeds on the farm. As he went into the store room to find the bags of seeds, he realized he needed to know how many bags of seeds he needs to bring with him. Bessie told him that each bag of seeds can cover a square of grass that is 1 m wide and 1 m across. Güs also knows that the farm is 300 m high and 400 m wide. How many bags of seeds does Güs need to carry?}{There are 300 rows of grass, where each row is made of 400 1x1 squares. This means that there are 300*400 = 300*400 meters$^{2}$ of grass, and that Güs needs to carry 300*400 bags.}{Area is how much space an object takes up. When measuring a 2d shape, we find how many 1x1 squares the object fills. When measuring the area of a 3d shape, we find how many 1x1x1 squares the object fills. Multiplying the length of each side together for "square" shapes gives us the area. (We will discuss area further with integrals).}
+{\input{Chapters/chFiveGraphics/AreaOfRectangle.tikz}}
 %Area of Square Edge Triangles
 \subchapter{Area of Square Edge Triangles}{As Güs took off, he noticed that the farm was split into two equal parts along the diagonal to make space for Bessie's pet human Farmer John. He realized that here, he could not plant grass, as Farmer John needed it for corn. How many bags of grass should Güs plant?}{The farm is divided in half, so Güs only needs to plant half of his bags. $\frac{1}{2}*300*400 =600 m^{2}$.}{Right triangles (triangles with square edges), are rectangles that have been split in half along the diagonal. This means that the area of a right triangle with side lengths x and y has an area of $\frac{400*300}{2}$.
-}{\begin{tikzpicture}
-    \coordinate (A) at (0,0);
-    \coordinate (B) at (0,3);
-    \coordinate (C) at (4,3);
-    \coordinate (D) at (4,0);
-    
-    \foreach \xpos in {1,...,4} {	
-        \foreach \ypos in {1,...,3} {
-            \SUBTRACT{\xpos}{1}{\llxpos}
-            \SUBTRACT{\ypos}{1}{\llypos}
-            \ADD{\llxpos}{\llypos}{\s}
-            \MODULO{\s}{2}{\redval}
-            \ADD{\s}{1}{\b}
-            \MODULO{\b}{2}{\blueval}
-            \definecolor{col}{rgb}{\redval,0,\blueval}
-            \filldraw[fill=col!40!white, draw=col, ultra thick, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (\llxpos,\llypos) rectangle (\xpos,\ypos);
-        }
-    }
-    
-    \draw[|-|,ultra thick,green, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (D) node[midway, left] {};
-    
-    \draw [decorate, decoration = {calligraphic brace, raise=10pt,amplitude=5pt}] (C) -- (D) node[midway, left, xshift=2cm,line width=3pt] {300 m};
-    \draw [decorate, decoration = {calligraphic brace, raise=10pt,amplitude=5pt}] (B) -- (C) node[midway, left, xshift=0.5cm, yshift=1cm,line width=3pt] {400 m};
-\end{tikzpicture}}
-\subchapter{Pythagorean Theorem}{Güs started planting grass. He remembered from school that grass spread rapidly, and so decided that to keep Farmer John's corn safe, he would make a small fence along the diagonal. How long of a fence does Güs need to buy?}{$300*300 + 400*400 = 500*500$. Güs needs to buy 500 m of fence.}{In a right triangle, the lengths of sides are related to one another. In such a triangle, a*a + b*b = c*c, where c is the diagonal length in the triangle. This relationship is called the \textit{pythagorean theorem}. \footnote{A proof of the theorem is found here: \url{https://www.mathsisfun.com/geometry/pythagorean-theorem-proof.html}}}{\tikzset{square/.style={minimum size=#1,draw},
-measureme/.style={execute at begin to={
-\path let \p1=($ (\tikztostart) - (\tikztotarget) $),\n1={veclen(\x1,\y1)}
-in \pgfextra{\xdef#1{\n1}};}}}
-\begin{tikzpicture}
-\filldraw[measureme=\mylen](0,0) 
-to node[midway,sloped,above,square=\mylen,fill=blue!20,draw=blue, ultra thick]{\xdef\mylenC{\mylen}} node[midway,left=3pt]{$C$} (1,2)
-to node[midway,sloped,above,square=\mylen,fill=red!20,draw=red, ultra thick]{\xdef\mylenB{\mylen}} node[midway,right=3pt]{$B$} (1,0) 
-to node[midway,sloped,below,square=\mylen,fill=purple!20,draw=purple, ultra thick]{\xdef\mylenA{\mylen}} node[midway,below=3pt]{$A$} (0,0);
-\begin{scope}[yshift=-5cm]
- \node[square=\mylenB,fill=red!20!white,draw=red,ultra thick](B) {$BxB$};
- \node[left=2pt of B] (plus) {$+$};
- \node[left=2pt of plus,square=\mylenA,fill=purple!20!white,draw=purple, ultra thick](A) {$AxA$};
- \node[right=2pt of B] (eq) {$=$};
- \node[right=2pt of eq,square=\mylenC,fill=blue!20!white,draw=blue, ultra thick](C) {$CxC$};
-\end{scope}
-\end{tikzpicture}}
+}{\input{Chapters/chFiveGraphics/AreaOfTriangle.tikz}}
+\subchapter{Pythagorean Theorem}{Güs started planting grass. He remembered from school that grass spread rapidly, and so decided that to keep Farmer John's corn safe, he would make a small fence along the diagonal. How long of a fence does Güs need to buy?}{$300*300 + 400*400 = 500*500$. Güs needs to buy 500 m of fence.}{In a right triangle, the lengths of sides are related to one another. In such a triangle, a*a + b*b = c*c, where c is the diagonal length in the triangle. This relationship is called the \textit{pythagorean theorem}. \footnote{A proof of the theorem is found here: \url{https://www.mathsisfun.com/geometry/pythagorean-theorem-proof.html}}
+{\input{Chapters/chFiveGraphics/PythagoreanTheorem.tikz}}
 %Perimeter
 \subchapter{Perimeter of a Shape}{After Güs finished planting grass, he decided to take a break for lunch. \paragraph{} "Aaaah," he sighed, contented. As he looked out at the farm, he noticed a discontented look on Bessie's face. \paragraph{}"What's the issue?" he asked. \paragraph{} "It's this fence." Bessie replied. "It's falling apart and we have to look at it all day." Güs decided that to thank her for letting them stay for the night, he would buy her a new fence. How many meters of fence does Güs need to buy?}{Two sides of the fence are 300 m long, and two sides of the fence are 400 m long. That means that there are 300 m + 300 m + 400 m + 400 m = 2*300 m+ 2*400 = 2(300 m + 400m) = 2*700 = 1400 m of fence.}{ Surface is the size of the edge of an object. When measuring a 2d shape, we find how many 1 long lines fit around the object. When measuring a 3d shape, we find how many 1x1 squares fit around the object. (We will discuss this further with integrals)
 The perimeter is the sum of all of the side lengths. Because 2 of the side length of the sides of a rectangle are always the same, 2x+2y is its perimeter, which can also be written as 2(x+y).}{Perimeter}

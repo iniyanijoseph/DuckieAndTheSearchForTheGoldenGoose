@@ -1,0 +1,17 @@
+\tikzset{square/.style={minimum size=#1,draw},
+measureme/.style={execute at begin to={
+\path let \p1=($ (\tikztostart) - (\tikztotarget) $),\n1={veclen(\x1,\y1)}
+in \pgfextra{\xdef#1{\n1}};}}}
+\begin{tikzpicture}
+\filldraw[measureme=\mylen](0,0) 
+to node[midway,sloped,above,square=\mylen,fill=blue!20,draw=blue, ultra thick]{\xdef\mylenC{\mylen}} node[midway,left=3pt]{$C$} (1,2)
+to node[midway,sloped,above,square=\mylen,fill=red!20,draw=red, ultra thick]{\xdef\mylenB{\mylen}} node[midway,right=3pt]{$B$} (1,0) 
+to node[midway,sloped,below,square=\mylen,fill=purple!20,draw=purple, ultra thick]{\xdef\mylenA{\mylen}} node[midway,below=3pt]{$A$} (0,0);
+\begin{scope}[yshift=-5cm]
+ \node[square=\mylenB,fill=red!20!white,draw=red,ultra thick](B) {$BxB$};
+ \node[left=2pt of B] (plus) {$+$};
+ \node[left=2pt of plus,square=\mylenA,fill=purple!20!white,draw=purple, ultra thick](A) {$AxA$};
+ \node[right=2pt of B] (eq) {$=$};
+ \node[right=2pt of eq,square=\mylenC,fill=blue!20!white,draw=blue, ultra thick](C) {$CxC$};
+\end{scope}
+\end{tikzpicture}
