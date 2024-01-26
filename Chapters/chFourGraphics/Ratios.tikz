@@ -11,5 +11,5 @@
     
     \draw [decorate, 
 	decoration = {calligraphic brace,mirror,
-		raise=10pt,amplitude=5pt}] (A) -- (D) node[midway, right, xshift=0.5cm,line width=3pt] {$3x40 km=120 km$};
+		raise=10pt,amplitude=5pt}] (A) -- (D) node[midway, right, xshift=0.5cm,line width=3pt] {$3\ast40 km=120 km$};
 \end{tikzpicture}

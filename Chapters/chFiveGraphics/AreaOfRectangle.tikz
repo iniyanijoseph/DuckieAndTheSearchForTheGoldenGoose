@@ -17,6 +17,6 @@
         }
     }
     
-    \draw [decorate, decoration = {calligraphic brace, raise=10pt,amplitude=5pt}] (C) -- (D) node[midway, left, xshift=2cm,line width=3pt] {300 m};
-    \draw [decorate, decoration = {calligraphic brace, raise=10pt,amplitude=5pt}] (B) -- (C) node[midway, left, xshift=0.5cm, yshift=1cm,line width=3pt] {400 m};
+    \draw [decorate, decoration = {calligraphic brace, raise=10pt,amplitude=5pt}] (C) -- (D) node[midway, left, xshift=2cm,line width=3pt] {$300 m$};
+    \draw [decorate, decoration = {calligraphic brace, raise=10pt,amplitude=5pt}] (B) -- (C) node[midway, left, xshift=0.5cm, yshift=1cm,line width=3pt] {$400 m$};
 \end{tikzpicture}
