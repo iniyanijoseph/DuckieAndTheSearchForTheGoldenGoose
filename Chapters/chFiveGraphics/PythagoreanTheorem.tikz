@@ -8,10 +8,10 @@ to node[midway,sloped,above,square=\mylen,fill=blue!20,draw=blue, ultra thick]{\
 to node[midway,sloped,above,square=\mylen,fill=red!20,draw=red, ultra thick]{\xdef\mylenB{\mylen}} node[midway,right=3pt]{$400$} (1,0) 
 to node[midway,sloped,below,square=\mylen,fill=purple!20,draw=purple, ultra thick]{\xdef\mylenA{\mylen}} node[midway,below=3pt]{$300$} (0,0);
 \begin{scope}[yshift=-5cm]
- \node[square=\mylenB,fill=red!20!white,draw=red,ultra thick](B) {$400\ast400m^{2}$};
+ \node[square=\mylenB,fill=red!20!white,draw=red,ultra thick](B) {$400^{2}$};
  \node[left=2pt of B] (plus) {$+$};
- \node[left=2pt of plus,square=\mylenA,fill=purple!20!white,draw=purple, ultra thick](A) {$300\ast300m^{2}$};
+ \node[left=2pt of plus,square=\mylenA,fill=purple!20!white,draw=purple, ultra thick](A) {$300^{2}$};
  \node[right=2pt of B] (eq) {$=$};
- \node[right=2pt of eq,square=\mylenC,fill=blue!20!white,draw=blue, ultra thick](C) {$500\ast500m^{2}$};
+ \node[right=2pt of eq,square=\mylenC,fill=blue!20!white,draw=blue, ultra thick](C) {$500^{2}$};
 \end{scope}
 \end{tikzpicture}
