@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.11.9)  30 JAN 2024 13:18
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2023.11.9)  30 JAN 2024 13:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1204,7 +1204,7 @@ isable this.
 )
 
 LaTeX Font Warning: Font shape `TU/Kalam(0)/m/sl' undefined
-(Font)              using `TU/Kalam(0)/m/it' instead on input line 28.
+(Font)              using `TU/Kalam(0)/m/it' instead on input line 30.
 
 (./Chapters/chFourGraphics/AddingFractions.tikz
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
@@ -1212,7 +1212,7 @@ isable this.
 )
 
 LaTeX Font Warning: Font shape `TU/Kalam(0)/m/sl' undefined
-(Font)              using `TU/Kalam(0)/m/it' instead on input line 34.
+(Font)              using `TU/Kalam(0)/m/it' instead on input line 36.
 
 Missing character: There is no ‽ (U+203D) in font Kalam/OT:script=DFLT;language
 =dflt;mapping=tex-text;!
@@ -1305,10 +1305,6 @@ LaTeX Font Warning: Font shape `TU/Kalam(0)/m/sl' undefined
 LaTeX Font Warning: Font shape `TU/Kalam(0)/m/sl' undefined
 (Font)              using `TU/Kalam(0)/m/it' instead on input line 27.
 
-(./Chapters/chFiveGraphics/PythagoreanTheorem.tikz
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-)
 
 LaTeX Font Warning: Font shape `TU/Kalam(0)/m/sl' undefined
 (Font)              using `TU/Kalam(0)/m/it' instead on input line 36.
@@ -1319,10 +1315,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 31015 strings out of 476191
- 637085 string characters out of 5812072
+ 31012 strings out of 476191
+ 636966 string characters out of 5812072
  1006556 words of memory out of 5000000
- 51074 multiletter control sequences out of 15000+600000
+ 51073 multiletter control sequences out of 15000+600000
  491235 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  95i,8n,93p,1170b,921s stack positions out of 5000i,500n,10000p,200000b,80000s
