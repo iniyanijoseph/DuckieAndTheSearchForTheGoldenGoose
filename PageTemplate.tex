@@ -1,15 +1,36 @@
 \newcommand{\subchapter}[5]{
+%\if\relax\detokenize{#1}\relax
+%\phantom{I}\newline
+%\else \textnormal{(#1)}%
+%\fi
+%\if\relax\detokenize{#2}\relax
+%\phantom{I}\newline
+%\else \textnormal{(#2)}%
+%\fi
+%\if\relax\detokenize{#3}\relax
+%\phantom{I}\newline
+%\else \textnormal{(#3)}%
+%\fi
+%\if\relax\detokenize{#4}\relax
+%\phantom{I}\newline
+%\else \textnormal{(#4)}%
+%\fi
+%\if\relax\detokenize{#5}\relax
+%\phantom{I}\newline
+%\else \textnormal{(#5)}%
+%\fi
+
 \begin{multicols*}{2}
 \raggedcolumns
 \section{#1}
 \vfill
-\subsection*{Story} #2
+\subsection*{} #2
 \vfill
-\subsection*{Problem} #3
+\subsection*{Solution} #3
 \vfill
 \subsection*{Definition} #4
  \columnbreak
- \subsection*{Graphic}
+ \subsection*{}
 \begin{center}
 \vspace*{\fill}
     #5
