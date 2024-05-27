@@ -18,7 +18,7 @@
     \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (C) -- (D) node[midway, left] {$40 km$};
     
     \foreach \pos in {1,...,7} {	
-        \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (1.5,\pos*0.6 - 0.6) -- (1.5,\pos *0.6) node[midway, left] {$\frac{70}{3} km$};
+        \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (1.5,\pos*0.6 - 0.6) -- (1.5,\pos *0.6) node[midway, left] {$\frac{40}{3} km$};
     }
 
     \draw [decorate, 

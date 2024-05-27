@@ -9,3 +9,26 @@
 \newcommand{\distanceEightOpFo}{-6}
 \ABSVALUE{\distanceEightOpFo}{\distanceEightAbsOpFo}
 \SUBTRACT{\distanceSevenOpTh}{\distanceEightOpFo}{\distanceNineOpFi}
+\newcommand{\distanceTwoOneO}{1}
+\newcommand{\distanceTwoOneTw}{2}
+\newcommand{\distanceTwoOneTh}{3}
+\ADD{\distanceTwoOneO}{\distanceTwoOneTw}{\distanceTwoOneIntermediary}
+\ADD{\distanceTwoOneTh}{\distanceTwoOneIntermediary}{\distanceTwoOneF} % Unmentioned distance
+\newcommand{\distanceTwoTwoO}{140}
+\newcommand{\distanceTwoTwoTw}{160}
+\ADD{\distanceTwoTwoO}{\distanceTwoTwoTw}{\distanceTwoTwoF}
+\newcommand{\distanceTwoThreeO}{2}
+\newcommand{\distanceTwoThreeTw}{3}
+\newcommand{\distanceTwoThreeTh}{2}
+\ADD{\distanceTwoThreeO}{\distanceTwoThreeTw}{\distanceTwoThreeIntermediary}
+\MULTIPLY{\distanceTwoThreeTh}{\distanceTwoThreeIntermediary}{\distanceTwoThreeF}
+\newcommand{\distanceTwoFourO}{3}
+\newcommand{\distanceTwoFourTw}{10}
+\MULTIPLY{\distanceTwoFourO}{\distanceTwoFourTw}{\distanceTwoFourF} 
+\ADD{\distanceTwoOneF}{\distanceTwoThreeF}{\distanceThreeTwoDelta}
+\ADD{\distanceNineOpFi}{\distanceThreeTwoDelta}{\distanceThreeTwo}
+\newcommand{\numSectionsTw}{4}
+\SUBTRACT{\distanceThreeTwo}{\distanceNineOpFi}{\distanceThreeThI}
+\DIVIDE{\distanceThreeThI}{\numSectionsTw}{\distanceThreeTh}
+\newcommand{\distanceFourFoO}{120}
+\DIVIDE{\distanceFourFoO}{\distanceThreeTwo}{\distanceFourFoTw}

@@ -7,14 +7,14 @@
     \coordinate (Cp) at (1.5,9);
     
     \node [inner sep=0pt] at (C) {\includegraphics[height=0.8cm]{Gus}};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {$140 m$};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (C) node[midway, left] {$160 m$};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {$\distanceTwoTwoO m$};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (C) node[midway, left] {$\distanceTwoTwoTw m$};
     
     \node [inner sep=0pt] at (Cp) {\includegraphics[height=0.8cm]{DuckieGami}};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Ap) -- (Bp) node[midway, left] {$160 m$};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Bp) -- (Cp) node[midway, left] {$140 m$};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Ap) -- (Bp) node[midway, left] {$\distanceTwoTwoTw m$};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Bp) -- (Cp) node[midway, left] {$\distanceTwoTwoO m$};
     
     \draw [decorate, 
 	decoration = {calligraphic brace,mirror,
-		raise=10pt,amplitude=5pt}] (Ap) -- (Cp) node[midway, right, xshift=0.5cm,line width=3pt] {$300 m$};
+		raise=10pt,amplitude=5pt}] (Ap) -- (Cp) node[midway, right, xshift=0.5cm,line width=3pt] {$\distanceTwoTwoF m$};
 \end{tikzpicture}

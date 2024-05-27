@@ -9,16 +9,16 @@
     \coordinate (Dp) at (1.5,8);
 
     \node [inner sep=0pt] at (D) {\includegraphics[height=0.8cm]{Gus}};
-    \draw[-|,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {$1 km$};
-    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (C) node[midway, left] {$2 km$};
-    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (C) -- (D) node[midway, left] {$1 km$};
+    \draw[-|,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (A) -- (B) node[midway, left] {$\distanceTwoOneO~km$};
+    \draw[->,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (B) -- (C) node[midway, left] {$\distanceTwoOneTw~km$};
+    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (C) -- (D) node[midway, left] {$\distanceTwoOneTh~km$};
 
     \node [inner sep=0pt] at (Dp) {\includegraphics[height=0.8cm]{DuckieGami}};
-    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Ap) -- (Bp) node[midway, left] {$1 km$};
-    \draw[-|,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Bp) -- (Cp) node[midway, left] {$2 km$};
-    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Cp) -- (Dp) node[midway, left] {$1 km$};
+    \draw[->,ultra thick,red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Ap) -- (Bp) node[midway, left] {$\distanceTwoOneO~km$};
+    \draw[-|,ultra thick,blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Bp) -- (Cp) node[midway, left] {$\distanceTwoOneTw~km$};
+    \draw[->,ultra thick,violet, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}] (Cp) -- (Dp) node[midway, left] {$\distanceTwoOneTh~km$};
 
     \draw [decorate,
 	decoration = {brace,mirror,
-		raise=15pt,}] (Ap) -- (Dp) node[midway, right, xshift=0.8cm] {$4 km$};
+		raise=15pt,}] (Ap) -- (Dp) node[midway, right, xshift=0.8cm] {$\distanceTwoOneF~km$};
 \end{tikzpicture}
