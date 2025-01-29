@@ -1,5 +1,0 @@
-\begin{tikzpicture}
-    \draw[purple, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick,fill=purple!40!white] (0,0) circle (3) node [right,xshift=3cm] {$14\pi\linebreak\approx 44$};
-    \draw[blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick] (0,0) -- (3,0) node [midway, above] {$7$};
-    \draw[->,purple, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick] (3,0)--(3,0);
-\end{tikzpicture}

@@ -1,8 +1,0 @@
-\begin{tikzpicture}
-     \filldraw[fill=blue!20,draw=red] (0,0) -- (3mm,0mm)
-    arc [start angle=0, end angle=57, radius=3mm] -- cycle;
-    \node[red] at (-0.5,-0.5) {$radian$};
-    \draw[blue] (3,0) -- ++(0+180:3) -- +(57:3);
-    \draw[red, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick] (3,0) arc[start angle=0, end angle=57, radius=3] node [midway,above,xshift=0.5cm] {$r$};
-    \draw[blue, decorate, decoration={random steps,segment length=3pt,amplitude=0.2pt}, ultra thick] (0,0) -- (3,0) node [midway,above] {$r$};
-\end{tikzpicture}
