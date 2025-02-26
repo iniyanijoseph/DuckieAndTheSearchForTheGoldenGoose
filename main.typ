@@ -20,15 +20,17 @@
 = Gus the Goose
 
 ==
+#show: page.with(background: image("P1.Base.png", height:100%))
 Gus the Goose went out to play
 
 Out with friends on a sunny day
 
 ==
+#show: page.with(background: "")//image("P1.Base.png"))
 Who were they? You may try to ask?
 
 This *set* of friends with whom Gus basked?
-
+#image("brackets.png")
 ==
 Duckie, Cottontail, and Blues McGee
 
@@ -38,7 +40,7 @@ He began to count them (1, 2, 3) and ended with the cardinality!
 Tomorrow new friends came to play
 
 And some friends had to go away
-
+// One goose landing on the left side, two geese looking same as before, and one goose leaving on the left
 ==
 This gave a new set: 2, 3, 4
 
@@ -53,7 +55,7 @@ Today Gus plays with friends called "J"
 What happens if we join them together?
 
 The *union* of these friends forever?
-
+//Make a huge U shape which surrounds all of them
 ==
 We get set "K" with all of them!
 
@@ -63,7 +65,7 @@ We get set "K" with all of them!
 What if we took the friends from both?
 
 The *intersection* of these days that goeth?
-
+// Intersect symbol over the the overlapping geese in gu
 ==
 We get {2, 3} as you can see!
 
@@ -218,3 +220,10 @@ That means that the opposite cannot be true
 So the statement is done. Yay and woo-hoo!
 
 //#pdf.embed("citations.typ")
+#show: pset.with(class: "CS 4141.606", student: "Iniyan Joseph (IIJ210000)", title: "Prelab 1", date: datetime.today())
+#let (theorem, lemma, corollary, remark, proposition, example, proof, rules: thm-rules) = default-theorems("thm-group", lang: "en")
+#show: thm-rules
+#set text(font:"New Computer Modern")
+#show heading : it => text(it, 11pt, weight:"bold")
+#set heading(numbering: "1ai1ai)")
+#set math.mat(delim: "[")
