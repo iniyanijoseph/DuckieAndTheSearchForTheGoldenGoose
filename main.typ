@@ -16,47 +16,55 @@
   ),
 )
 
-
+#let space(x : int) = {for i in range(x) {math.space}} 
 = Gus the Goose
 
 ==
-#show: page.with(background: image("P1.Base.png", height:100%))
+#set page(background: image("P1.Base.png", height:80%))
 Gus the Goose went out to play
 
 Out with friends on a sunny day
 
 ==
-#show: page.with(background: "")//image("P1.Base.png"))
-Who were they? You may try to ask?
+#set page(background: image("P2.Base.png", height:45%), fill: rgb("5FEFE3"))
+How many? You may wish to ask?
 
 This *set* of friends with whom Gus basked?
-#image("brackets.png")
-==
-Duckie, Cottontail, and Blues McGee
-
-He began to count them (1, 2, 3) and ended with the cardinality!
 
 ==
+#set page(background: image("P7.Base.png", height:48%), fill: rgb("5FB3EF"))
+He began to count them (1, 2, 3) 
+
+And ended with the cardinality!
+
+==
+#set page(background: image("P3.Base.png", height:80%), fill: rgb("5FB3EF"))
 Tomorrow new friends came to play
 
+#space(x: 24)
 And some friends had to go away
-// One goose landing on the left side, two geese looking same as before, and one goose leaving on the left
+
 ==
+#set page(background: image("P4.Base.png", height:53%), fill: rgb("5FB3EF"))
 This gave a new set: 2, 3, 4
 
 Looks like Gus has friends galore!
 
 ==
+#set page(background: image("P4.Base.png", height:53%), fill: rgb("A36DB9"))
 Yesterday, we called friends "A"
 
 Today Gus plays with friends called "J"
 
 ==
+#set page(background: image("P5.Base.png", height:33%), fill: rgb("EAA36DB9"))
 What happens if we join them together?
 
 The *union* of these friends forever?
 //Make a huge U shape which surrounds all of them
+
 ==
+#set page(background: image("P6.Base.png", height:174%), fill: rgb("EAA36DB9"))
 We get set "K" with all of them!
 
 {1, 2, 3, 4}
@@ -72,9 +80,9 @@ We get {2, 3} as you can see!
 Its got "2" cardinality
 
 ==
-Just be careful about the count for union, 
+Just be careful about the union count, 
 
-The sum of both may be more than bargained!
+The sum of both may be a large amount!
 
 ==
 Phew! Now that was quite a bit of work
@@ -106,7 +114,7 @@ Who hit who and who stayed the same
 ==
 A relation like this is also a set
 
-The *Cartesian product* is the biggest one yet
+The *cartesian product* is the biggest one yet
 
 ==
 After the question, losing team had their doubts
@@ -116,12 +124,12 @@ When in the game did each person get out?
 ==
 They made a relation of each person and times
 
-To find if each person had gone behind. 
+To find when each person had gone behind. 
 
 ==
-Each person could only have been once been outed
+Each person could only have once been outed
 
-So there is only one pair (player, time) per player who pouts
+So there is only one pair (player, time) per player who pouted
 
 ==
 Because at the end, every player was outed
@@ -134,7 +142,7 @@ The time that each goose got knocked out
 And they could see without a doubt
 
 ==
-That they had lost and Gus had won
+That they had lost and the others had won
 
 But that's OK, they had lots of fun!
 
@@ -159,14 +167,14 @@ He had a list of all the streets
 A relation on all the places to eat!
 
 ==
-This graph he drew as quickly as he could
+This *graph* he drew as quickly as he could
 
-Drawing a tangle of walkways called edges
+Carving a tangle of *edges* on wood
 
 ==
 How could he get from house A to house Z?
 
-Which of the paths to travel should he?
+Could he make unique paths for each pair (c, d)?
 
 ==
 Once he made it back home he had an idea
@@ -176,7 +184,7 @@ How could he connect all the houses together?
 ==
 He didn't want to have to become absentee
 
-The new acyclic graph he called it a tree!
+So the new acyclic graph he called it a tree!
 
 ==
 Gus was exhausted
@@ -194,20 +202,14 @@ When he woke up, refreshed
 He wondered "hmm see"
 
 ==
-I know all these meanings,
+I know all this math about graphs and trees,
 
-But don't have feelings
-
-==
-Because how can I reason about 
-
-Graphs, sets, and trees?
+But what can I do to apply it as things may be?
 
 ==
-I can argue directly 
-"A leads to B"
+I can argue directly "A leads to B"
 
-But it may not be easy if it cannot be
+But it may not be easy, its clear to see
 
 ==
 What if I went through another direction?
@@ -220,10 +222,3 @@ That means that the opposite cannot be true
 So the statement is done. Yay and woo-hoo!
 
 //#pdf.embed("citations.typ")
-#show: pset.with(class: "CS 4141.606", student: "Iniyan Joseph (IIJ210000)", title: "Prelab 1", date: datetime.today())
-#let (theorem, lemma, corollary, remark, proposition, example, proof, rules: thm-rules) = default-theorems("thm-group", lang: "en")
-#show: thm-rules
-#set text(font:"New Computer Modern")
-#show heading : it => text(it, 11pt, weight:"bold")
-#set heading(numbering: "1ai1ai)")
-#set math.mat(delim: "[")

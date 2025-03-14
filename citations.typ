@@ -9,3 +9,10 @@ https://hodges-model.blogspot.com/2008/02/0s-1s-old-and-new-wheres-data.html
 
 
 // Friends
+// Used pictures from valerie 
+
+
+// Tomorrow new friends 
+https://www.flickr.com/photos/clairity/33417156583
+
+https://www.featheredphotography.com/blog/2019/12/31/canada-goose-landing-in-a-snowstorm/
